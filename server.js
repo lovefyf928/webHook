@@ -8,6 +8,7 @@ http.createServer((req, res) => {
         res.end("not such location")
     })
 }).listen(8888);
-webHook.on("push", () => {
-    terminal("./AutoPull.sh");
+webHook.on("push", (event) => {
+    console.log("push");
+    // terminal("./AutoPull.sh");
 });
