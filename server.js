@@ -10,5 +10,5 @@ http.createServer((req, res) => {
 }).listen(8888);
 webHook.on("push", (event) => {
     console.log("push");
-    // terminal("./AutoPull.sh");
+    terminal("./AutoPull.sh");
 });
